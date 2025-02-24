@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 12px;
+}
+
 .curly-container {
   /* position: absolute;
   top: 0px; */
@@ -53,15 +57,42 @@
   /* background-color: blue; */
 }
 
+.btn--container {
+  position: relative;
+}
+
 a:link,
 a:visited {
   display: inline-block;
   padding: 1rem 2rem;
   text-decoration: none;
+
   color: inherit;
-  background-color: blue;
+
   transition: background-color 1s;
 }
+
+.sign-in,
+.sign-up {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sign-in {
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  background-color: red;
+}
+
+.sign-up {
+  background-color: yellow;
+}
+
+/* .sign-up {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+} */
 
 a:hover {
   background-color: red;

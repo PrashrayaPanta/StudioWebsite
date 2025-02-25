@@ -1,0 +1,20 @@
+$default1: 0;
+
+$default2: 0;
+@mixin btnStyle(
+  $border-top-right-radius: $default1,
+  $border-bottom-right-radius: $default2,
+  $padding-left,
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $disp
+) {
+  padding-left: $padding-left;
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  border-top-right-radius: $border-top-right-radius;
+  border-bottom-right-radius: $border-bottom-right-radius;
+  display: $disp;
+}

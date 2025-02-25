@@ -4,25 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
   </head>
   <body>
-    <div
-      style="background-color: red; text-align: right"
-      class="btn--container"
-    >
+    <div style="text-align: right" class="btn--container mr-1">
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
-        class="sign-in"
+        class="btn--red text--white sign-in"
         >Sign In</a
       >
-      <a href="" class="sign-up">SignUp</a>
+      <a href="" class="btn btn--yellow text--white sign-up">SignUp</a>
     </div>
 
     <div class="wrapper">
       <div class="text">AR Photo</div>
     </div>
+
+    <div class="allcategory--packages">
+      <a href="" class="all--category">All Category</a>
+      <a href="" class="package--ultra">Ultra Premium Package</a>
+      <a href="" class="package--semi">Semi Premium Package</a>
+      <a href="" class="package--premium">Premium Package</a>
+      <a href="" class="package--micro">Micro Premium</a>
+    </div>
+
+    <main class="mt-1">
+      <img
+        src="./img/istockphoto-1200700892-1024x1024.jpg"
+        alt=""
+        srcset=""
+        class="photography--studio"
+      />
+
+      <div class="left-part">
+        <h1>PhotoGraphy Studio</h1>
+        <h2>Since 2019</h2>
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search Hotels"
+          />
+
+          <button class="search__button btn">
+            <svg class="search__icon">
+              <use xlink:href="./img/sprite.svg#icon-search"></use>
+            </svg>
+            <svg class="expand__icon">
+              <use xlink:href="./img/sprite.svg#icon-expand"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="features">
+          <a href="" class="feature btn">Printing</a>
+          <a href="" class="feature btn">Framing</a>
+          <a href="" class="feature btn">Designing</a>
+        </div>
+      </div>
+
+      <div class="right-part">
+        <h1>Book Now</h1>
+      </div>
+    </main>
   </body>
 </html>

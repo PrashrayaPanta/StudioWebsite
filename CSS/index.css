@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 12px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.text {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.text::before {
+  content: "{";
+  position: absolute;
+  top: -9px;
+  left: 160px;
+  transform: scale(2) rotate(90deg);
+}
+.text::after {
+  content: "[";
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  transform: scale(2) rotate(-90deg);
+}
+
+.btn--container {
+  position: relative;
+}
+
+.sign-in {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  background-color: red;
+}
+.sign-in:link, .sign-in:visited {
+  text-decoration: none;
+  transition: background-color 1s;
+  display: inline-block;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: inline-block;
+}
+
+.sign-up {
+  background-color: yellow;
+}
+.sign-up:link, .sign-up:visited {
+  text-decoration: none;
+  transition: background-color 1s;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: inline-block;
+}
+
+.allcategory--packages {
+  background-color: red;
+  padding: 5px 12px;
+  margin: 0 12px 0 15px;
+}
+
+.all--category {
+  text-decoration: none;
+}
+
+.package--ultra,
+.package--semi,
+.package--premium,
+.package--micro {
+  text-decoration: none;
+}
+
+main {
+  padding: 0 0 0 12px;
+  margin-left: 12px;
+}
+
+/* Utility Classes */
+.text--white {
+  color: white;
+}
+
+.btn--red {
+  background-color: red;
+}
+
+.btn--yellow {
+  background-color: yellow;
+}
+
+.mr-1 {
+  margin-right: 20px;
+}
+
+.mt-1 {
+  margin-top: 30px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 10px;
+}
+
+.mb-1 {
+  margin-bottom: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search__input {
+  width: 50%;
+  height: 30px;
+  border: none;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid red;
+  padding-left: 12px;
+}
+.search__input:focus {
+  outline: none;
+}
+.search__button {
+  border: none;
+  transform: translate(-80px, 2px);
+  background-color: white;
+}
+.search__icon {
+  height: 20px;
+  width: 30px;
+  fill: red;
+}
+
+.expand__icon {
+  height: 20px;
+  width: 30px;
+}
+
+.photography--studio {
+  width: 100%;
+}
+
+.form__text {
+  width: 50%;
+  height: 40px;
+}
+
+.features {
+  width: 50%;
+  display: flex;
+  background-color: red;
+  padding-left: 24px;
+  justify-content: space-between;
+}
+.features .feature {
+  text-decoration: none;
+  background-color: blue;
+  padding-left: 2rem;
+  padding-top: 0.1rem;
+  padding-right: 2rem;
+  padding-bottom: 0.1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=index.css.map */

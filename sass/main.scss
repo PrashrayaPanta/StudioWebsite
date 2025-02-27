@@ -4,38 +4,39 @@
 
 @use "../Utility/utility";
 
+html {
+  font-size: 62.5%;
+
+  //1 rem = 10px;
+}
+
 body {
-  padding: 12px;
+  padding: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .wrapper {
   position: relative;
-  // background-color: purple;
-  // background-color: aqua;
-  // width: 50%;
-  // margin: 0 auto;
 }
 
 .text {
   font-size: 3rem;
   padding: 1rem;
-  // background-color: red;
-  // display: block;
-  // text-align: center;
 
   &::before {
     content: "{";
     position: absolute;
-    top: -9px;
-    left: 160px;
+    top: -1rem;
+    left: 10.2rem;
     transform: scale(2) rotate(90deg);
   }
 
   &::after {
     content: "[";
     position: absolute;
-    top: 50px;
-    left: 150px;
+    top: 3.2rem;
+    left: 9rem;
     transform: scale(2) rotate(-90deg);
   }
 }
@@ -48,7 +49,7 @@ body {
 .sign-in {
   position: absolute;
   top: 0;
-  right: 80px;
+  right: 6rem;
   background-color: red;
 
   &:link,
@@ -72,8 +73,8 @@ body {
 
 .allcategory--packages {
   background-color: red;
-  padding: 5px 12px;
-  margin: 0 12px 0 15px;
+  padding: 0.5rem 1.2rem;
+  margin: 0 1.2rem 0 1.5rem;
 }
 
 .all--category {
@@ -88,26 +89,75 @@ body {
 }
 
 main {
-  padding: 0 0 0 12px;
-  margin-left: 12px;
+  padding: 0 0 0 0px;
+
   // position: relative;
+  background-image: url("../img/What-are-the-Benefits-of-Photography-Complete-Overview (1).png");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   .stacked__container {
     display: flex;
+    gap: 35px;
 
-    background-color: blue;
+    // background-color: blue;
   }
 
   .left-part {
     // background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     flex-basis: 100%;
-    background-color: red;
+    // background-color: red;
     // flex-grow: 1;
+    h1 {
+      background-color: red;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+    }
+
+    .text-right {
+      color: rgba(255, 255, 255, 0.759);
+      font-weight: 300;
+    }
   }
   .right-part {
     // background-color: blue;
-    background-color: pink;
+    // padding-top: 40px;
+    border-radius: 8px;
+
+    background-color: red;
     flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book__now {
+    // background-color: yellow;
+    background-color: yellow;
+  }
+
+  .booking__credentials {
+    background-color: rgba(127, 255, 212, 0.5);
+  }
+
+  .whats__app {
+    // background-color: red;
+  }
+
+  .phone__no {
+    // background-color: purple;
+  }
+
+  .email__id {
+    // background-color: aquamarine;
   }
 }
 
@@ -115,7 +165,7 @@ main {
 
 .search {
   display: flex;
-  background-color: aqua;
+  // background-color: aqua;
   align-items: center;
   // position: relative;
   // margin-bottom: 8px;
@@ -141,13 +191,13 @@ main {
   &__button {
     position: absolute;
     left: 44%;
-    // left: 400px;
-
     display: flex;
     align-items: center;
     background-color: white;
     padding-right: -30px;
     border: none;
+    flex-shrink: 0;
+    background-color: blue;
     // background-color: white;
   }
 
@@ -183,12 +233,53 @@ main {
     text-decoration: none;
     background-color: blue;
     @include mixins.btnStyle(
-      $padding-left: 2rem,
-      $padding-top: 0.1rem,
-      $padding-right: 2rem,
-      $padding-bottom: 0.1rem,
+      $padding-left: 3rem,
+      $padding-top: 1rem,
+      $padding-right: 3rem,
+      $padding-bottom: 1rem,
       $disp: inline-block
     );
-    border-radius: 12px;
+    border-radius: 1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: aqua;
+
+  .footer__companies__logos {
+    // background-color: red;
+
+    h1 {
+      background-color: pink;
+    }
+  }
+
+  .card__container {
+    display: flex;
+    background-color: red;
+
+    .card {
+      // padding: 12px;
+      background-color: aqua;
+      border: 1px solid red;
+      border-radius: 12px;
+      overflow: hidden;
+
+      padding-top: 22px;
+
+      padding-bottom: 22px;
+
+      &__title {
+        background-color: yellow;
+        text-align: center;
+        border-radius: 12px;
+      }
+
+      &__description {
+        background-color: aquamarine;
+        text-align: center;
+      }
+    }
   }
 }

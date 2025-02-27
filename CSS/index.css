@@ -20,12 +20,20 @@
   text-align: right;
 }
 
+.ml-22 {
+  margin-left: 22px;
+}
+
 .mr-1 {
   margin-right: 20px;
 }
 
 .mt-1 {
   margin-top: 30px;
+}
+
+.mt-35px {
+  margin-top: 35px;
 }
 
 .mt-2 {
@@ -48,8 +56,13 @@
   margin-bottom: 10px;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  padding: 12px;
+  padding: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .wrapper {
@@ -63,15 +76,15 @@ body {
 .text::before {
   content: "{";
   position: absolute;
-  top: -9px;
-  left: 160px;
+  top: -1rem;
+  left: 10.2rem;
   transform: scale(2) rotate(90deg);
 }
 .text::after {
   content: "[";
   position: absolute;
-  top: 50px;
-  left: 150px;
+  top: 3.2rem;
+  left: 9rem;
   transform: scale(2) rotate(-90deg);
 }
 
@@ -83,7 +96,7 @@ body {
 .sign-in {
   position: absolute;
   top: 0;
-  right: 80px;
+  right: 6rem;
   background-color: red;
 }
 .sign-in:link, .sign-in:visited {
@@ -116,8 +129,8 @@ body {
 
 .allcategory--packages {
   background-color: red;
-  padding: 5px 12px;
-  margin: 0 12px 0 15px;
+  padding: 0.5rem 1.2rem;
+  margin: 0 1.2rem 0 1.5rem;
 }
 
 .all--category {
@@ -132,26 +145,51 @@ body {
 }
 
 main {
-  padding: 0 0 0 12px;
-  margin-left: 12px;
+  padding: 0 0 0 0px;
+  background-image: url("../img/What-are-the-Benefits-of-Photography-Complete-Overview (1).png");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .stacked__container {
   display: flex;
-  background-color: blue;
+  gap: 35px;
 }
 main .left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   flex-basis: 100%;
+}
+main .left-part h1 {
   background-color: red;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+main .left-part .text-right {
+  color: rgba(255, 255, 255, 0.759);
+  font-weight: 300;
 }
 main .right-part {
-  background-color: pink;
+  border-radius: 8px;
+  background-color: red;
   flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
+main .book__now {
+  background-color: yellow;
+}
+main .booking__credentials {
+  background-color: rgba(127, 255, 212, 0.5);
+}
 /* Utility Classes */
 .search {
   display: flex;
-  background-color: aqua;
   align-items: center;
 }
 .search__input {
@@ -175,6 +213,8 @@ main .right-part {
   background-color: white;
   padding-right: -30px;
   border: none;
+  flex-shrink: 0;
+  background-color: blue;
 }
 .search__icon {
   height: 25px;
@@ -206,14 +246,43 @@ main .right-part {
 .features .feature {
   text-decoration: none;
   background-color: blue;
-  padding-left: 2rem;
-  padding-top: 0.1rem;
-  padding-right: 2rem;
-  padding-bottom: 0.1rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   display: inline-block;
+  border-radius: 1rem;
+}
+
+.footer {
+  display: flex;
+  background-color: aqua;
+}
+.footer .footer__companies__logos h1 {
+  background-color: pink;
+}
+.footer .card__container {
+  display: flex;
+  background-color: red;
+}
+.footer .card__container .card {
+  background-color: aqua;
+  border: 1px solid red;
   border-radius: 12px;
+  overflow: hidden;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.footer .card__container .card__title {
+  background-color: yellow;
+  text-align: center;
+  border-radius: 12px;
+}
+.footer .card__container .card__description {
+  background-color: aquamarine;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

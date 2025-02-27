@@ -257,17 +257,10 @@ main .booking__credentials {
 }
 
 .footer {
-  display: flex;
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.footer .footer__companies__logos h1 {
-  background-color: pink;
-}
-.footer .card__container {
-  display: flex;
-  background-color: red;
-}
-.footer .card__container .card {
+.footer .card {
   background-color: aqua;
   border: 1px solid red;
   border-radius: 12px;
@@ -275,14 +268,16 @@ main .booking__credentials {
   padding-top: 22px;
   padding-bottom: 22px;
 }
-.footer .card__container .card__title {
+.footer .card__title {
   background-color: yellow;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 4px;
 }
-.footer .card__container .card__description {
-  background-color: aquamarine;
+.footer .card__description {
   text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 /*# sourceMappingURL=index.css.map */
